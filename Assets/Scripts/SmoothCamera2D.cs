@@ -16,9 +16,9 @@ public class SmoothCamera2D : MonoBehaviour {
 
 	// Initialize the variable to point to the player
 	void Start() {
-		
+
 		player = GameObject.FindGameObjectWithTag ("Player");
-	
+
 	}
 
 	// Update is called once per frame

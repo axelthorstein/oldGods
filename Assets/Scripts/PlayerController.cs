@@ -22,7 +22,7 @@ public class PlayerController : MonoBehaviour {
 	void Update() {
 	
 		anime.SetBool ("Grounded", grounded);
-		anime.SetFloat ("Speed", Mathf.Abs(Input.GetAxis("Horizontal")));
+		anime.SetFloat ("Speed", Mathf.Abs(rb2d.velocity.x));
 
 		if (Input.GetAxis("Horizontal") < -0.1f) 
 		{
@@ -44,20 +44,33 @@ public class PlayerController : MonoBehaviour {
 	// Update is called once per frame
 	void FixedUpdate () {
 
+		// Set our velocity to 75% to make up for no friction.
+		Vector3 easeVelocity = rb2d.velocity;
+		easeVelocity.y = rb2d.velocity.y;
+		easeVelocity.z = 0.0f;
+		easeVelocity.x *= 0.75f;
 
+		// Retrieve left or right moves
 		float horizontalMove = Input.GetAxis ("Horizontal");
-		rb2d.AddForce ((Vector2.right * speed) * horizontalMove);
 
-		if (rb2d.velocity.x > maxSpeed) {
-
-			rb2d.velocity = new Vector2 (maxSpeed, rb2d.velocity.y);
-			
+		// Fake Friction / easing of our player
+		if (grounded) 
+		{
+			rb2d.velocity = easeVelocity;
 		}
 
-		if (rb2d.velocity.x < -maxSpeed) {
+		// Moves the player
+		rb2d.AddForce ((Vector2.right * speed) * horizontalMove);
 
+		// Limiting the speed of the player
+		if (rb2d.velocity.x > maxSpeed) 
+		{
+			rb2d.velocity = new Vector2 (maxSpeed, rb2d.velocity.y);	
+		}
+
+		if (rb2d.velocity.x < -maxSpeed) 
+		{
 			rb2d.velocity = new Vector2 (-maxSpeed, rb2d.velocity.y);
-
 		}
 	}
 }

@@ -5,46 +5,72 @@ public class PlayerController : MonoBehaviour {
 
 	// Movement
 
-	public float speed;
-	public float jump;
-	float moveVelocity;
+	public float speed = 50f;
+	public int maxSpeed = 3;
+	public float jumpPower = 250f;
+	public bool grounded = true; 
 
-	// Ground Variables
+	private Rigidbody2D rb2d;
+	private Animator anime;
 
-	bool grounded = true; 
+	void Start() {
+
+		rb2d = gameObject.GetComponent<Rigidbody2D> ();
+		anime = gameObject.GetComponent<Animator> ();
+	}
+
+	void Update() {
 	
+		anime.SetBool ("Grounded", grounded);
+		anime.SetFloat ("Speed", Mathf.Abs(rb2d.velocity.x));
+
+		if (Input.GetAxis("Horizontal") < -0.1f) 
+		{
+			transform.localScale = new Vector3 (-1, 1, 1);
+		}
+
+		if (Input.GetAxis("Horizontal") > 0.1f) 
+		{
+			transform.localScale = new Vector3 (1, 1, 1);
+		}
+
+		if (Input.GetButtonDown("Jump") && grounded) 
+		{
+			rb2d.AddForce (Vector2.up * jumpPower);
+		}
+	}
+
+
 	// Update is called once per frame
-	void Update () {
-		// Jumping 
-		if (Input.GetKeyDown (KeyCode.Space) || Input.GetKeyUp (KeyCode.UpArrow) || Input.GetKeyDown (KeyCode.Z) || Input.GetKeyUp (KeyCode.W)) {
-			if (grounded) {
-				GetComponent<Rigidbody2D> ().velocity = new Vector2 (GetComponent<Rigidbody2D> ().velocity.x, jump);
-			}
+	void FixedUpdate () {
+
+		// Set our velocity to 75% to make up for no friction.
+		Vector3 easeVelocity = rb2d.velocity;
+		easeVelocity.y = rb2d.velocity.y;
+		easeVelocity.z = 0.0f;
+		easeVelocity.x *= 0.75f;
+
+		// Retrieve left or right moves
+		float horizontalMove = Input.GetAxis ("Horizontal");
+
+		// Fake Friction / easing of our player
+		if (grounded) 
+		{
+			rb2d.velocity = easeVelocity;
 		}
 
-		moveVelocity = 0;
+		// Moves the player
+		rb2d.AddForce ((Vector2.right * speed) * horizontalMove);
 
-
-		if (Input.GetKey (KeyCode.LeftArrow) || Input.GetKey (KeyCode.A)) {
-
-			moveVelocity = -speed;
-
+		// Limiting the speed of the player
+		if (rb2d.velocity.x > maxSpeed) 
+		{
+			rb2d.velocity = new Vector2 (maxSpeed, rb2d.velocity.y);	
 		}
-		if (Input.GetKey (KeyCode.RightArrow) || Input.GetKey (KeyCode.D)) {
 
-			moveVelocity = speed;
-
+		if (rb2d.velocity.x < -maxSpeed) 
+		{
+			rb2d.velocity = new Vector2 (-maxSpeed, rb2d.velocity.y);
 		}
-		GetComponent<Rigidbody2D> ().velocity = new Vector2 (moveVelocity, GetComponent<Rigidbody2D> ().velocity.y);
-	
-
-		}
-		
-		// check if grounded
-		void OnTriggerEnter2D() {
-		grounded = true;
-		}
-		void OnTriggerExit2D() {
-		grounded = false;
 	}
 }

@@ -24,10 +24,15 @@ public class CharacterChanger : MonoBehaviour {
 				characters[1].SetActive (true);
 				characters[1].transform.position = characters[0].transform.position;
 				characters[0].SetActive (false);
+			} 
+			if (characters [1].activeSelf) {
+				characters [2].SetActive (true);
+				characters [2].transform.position = characters [1].transform.position;
+				characters [1].SetActive (false);
 			} else {
-				characters[0].SetActive (true);
-				characters[0].transform.position = characters[1].transform.position;
-				characters[1].SetActive (false);
+				characters [0].SetActive (true);
+				characters [0].transform.position = characters [2].transform.position;
+				characters [2].SetActive (false);
 			}
 		}
 	}

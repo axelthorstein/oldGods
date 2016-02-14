@@ -50,6 +50,8 @@
      <Compile Include="Assets\Scripts\FishGroundCheck.cs" />
      <Compile Include="Assets\Scripts\FoxController.cs" />
      <Compile Include="Assets\Scripts\GroundCheck.cs" />
+     <Compile Include="Assets\Scripts\RabbitController.cs" />
+     <Compile Include="Assets\Scripts\RabbitGroundcheck.cs" />
      <Compile Include="Assets\Scripts\SmoothCamera2D.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>

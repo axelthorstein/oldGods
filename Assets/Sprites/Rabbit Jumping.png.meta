@@ -1,0 +1,279 @@
+fileFormatVersion: 2
+guid: 0d3e1a088206a4c299db053b43c47fd6
+timeCreated: 1455486242
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Rabbit Jumping_0
+    21300002: Rabbit Jumping_1
+    21300004: Rabbit Jumping_2
+    21300006: Rabbit Jumping_3
+    21300008: Rabbit Jumping_4
+    21300010: Rabbit Jumping_5
+    21300012: Rabbit Jumping_6
+    21300014: Rabbit Jumping_7
+    21300016: Rabbit Jumping_8
+    21300018: Rabbit Jumping_9
+    21300020: Rabbit Jumping_10
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 32
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Rabbit Jumping_0
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 8
+        width: 48
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -3, y: 17}
+        - {x: -16, y: 14}
+        - {x: -24, y: 1}
+        - {x: -24, y: -17}
+        - {x: 24, y: -17}
+        - {x: 24, y: 11}
+        - {x: 18, y: 17}
+    - name: Rabbit Jumping_1
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 8
+        width: 50
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 19, y: 18}
+        - {x: -10, y: 18}
+        - {x: -24, y: 13}
+        - {x: -25, y: 10}
+        - {x: -25, y: -18}
+        - {x: 22, y: -18}
+        - {x: 25, y: -14}
+        - {x: 25, y: 10}
+    - name: Rabbit Jumping_2
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 6
+        width: 50
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -4, y: 24}
+        - {x: -25, y: -3}
+        - {x: -25, y: -24}
+        - {x: 24, y: -24}
+        - {x: 25, y: -19}
+        - {x: 25, y: 22}
+        - {x: 20, y: 24}
+    - name: Rabbit Jumping_3
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 0
+        width: 46
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -8, y: 30}
+        - {x: -8, y: 25}
+        - {x: -22, y: 2}
+        - {x: -23, y: -6}
+        - {x: -23, y: -29}
+        - {x: -20, y: -30}
+        - {x: 12, y: -30}
+        - {x: 23, y: -19}
+        - {x: 23, y: 26}
+        - {x: 20, y: 30}
+    - name: Rabbit Jumping_4
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 2
+        width: 46
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11, y: 29}
+        - {x: -16, y: 21}
+        - {x: -23, y: 8}
+        - {x: -23, y: -27}
+        - {x: -21, y: -29}
+        - {x: 2, y: -29}
+        - {x: 8, y: -25}
+        - {x: 23, y: 4}
+        - {x: 23, y: 29}
+    - name: Rabbit Jumping_5
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 4
+        width: 52
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 26, y: 7}
+        - {x: 26, y: 19}
+        - {x: 21, y: 25}
+        - {x: -1, y: 25}
+        - {x: -26, y: 12}
+        - {x: -26, y: -25}
+        - {x: -3, y: -25}
+        - {x: 24, y: -8}
+        - {x: 24, y: 1}
+        - {x: 20, y: 5}
+    - name: Rabbit Jumping_6
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 16
+        width: 56
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 28, y: -22}
+        - {x: 28, y: 22}
+        - {x: -19, y: 22}
+        - {x: -28, y: 18}
+        - {x: -28, y: -22}
+    - name: Rabbit Jumping_7
+      rect:
+        serializedVersion: 2
+        x: 454
+        y: 8
+        width: 54
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 21, y: 13}
+        - {x: 17, y: 9}
+        - {x: 0, y: 20}
+        - {x: -9, y: 23}
+        - {x: -25, y: 23}
+        - {x: -27, y: 19}
+        - {x: -27, y: -17}
+        - {x: -17, y: -23}
+        - {x: 27, y: -23}
+        - {x: 27, y: 11}
+        - {x: 23, y: 13}
+    - name: Rabbit Jumping_8
+      rect:
+        serializedVersion: 2
+        x: 524
+        y: 12
+        width: 50
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 25, y: 8}
+        - {x: 18, y: 17}
+        - {x: -10, y: 17}
+        - {x: -19, y: 15}
+        - {x: -25, y: 8}
+        - {x: -25, y: -8}
+        - {x: -24, y: -12}
+        - {x: -20, y: -17}
+        - {x: 25, y: -17}
+    - name: Rabbit Jumping_9
+      rect:
+        serializedVersion: 2
+        x: 590
+        y: 8
+        width: 50
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 22, y: 17}
+        - {x: -13, y: 17}
+        - {x: -25, y: 13}
+        - {x: -25, y: -17}
+        - {x: 24, y: -17}
+        - {x: 25, y: -13}
+        - {x: 25, y: 12}
+    - name: Rabbit Jumping_10
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 4
+        width: 48
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -3, y: 18}
+        - {x: -24, y: -3}
+        - {x: -24, y: -18}
+        - {x: 22, y: -18}
+        - {x: 24, y: -17}
+        - {x: 24, y: 8}
+        - {x: 18, y: 18}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

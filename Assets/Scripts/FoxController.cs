@@ -9,7 +9,7 @@ public class PlayerController : MonoBehaviour {
 	public int maxSpeed = 3;
 	public float jumpPower = 250f;
 	public bool grounded = true; 
-
+	int test;
 	private Rigidbody2D rb2d;
 	private Animator anime;
 
@@ -20,7 +20,7 @@ public class PlayerController : MonoBehaviour {
 	}
 
 	void Update() {
-	
+
 		anime.SetBool ("Grounded", grounded);
 		anime.SetFloat ("Speed", Mathf.Abs(rb2d.velocity.x));
 

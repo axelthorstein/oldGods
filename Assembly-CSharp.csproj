@@ -47,8 +47,8 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\CharacterChanger.cs" />
      <Compile Include="Assets\Scripts\FishController.cs" />
+     <Compile Include="Assets\Scripts\FoxController.cs" />
      <Compile Include="Assets\Scripts\GroundCheck.cs" />
-     <Compile Include="Assets\Scripts\PlayerController.cs" />
      <Compile Include="Assets\Scripts\SmoothCamera2D.cs" />
  <Reference Include="UnityEngine.Networking">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>

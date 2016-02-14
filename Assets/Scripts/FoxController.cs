@@ -1,13 +1,13 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class PlayerController : MonoBehaviour {
+public class FoxController : MonoBehaviour {
 
 	// Movement
 
-	public float speed = 50f;
-	public int maxSpeed = 3;
-	public float jumpPower = 250f;
+	public float speed = 100f;
+	public int maxSpeed = 5;
+	public float jumpPower = 850f;
 	public bool grounded = true; 
 	int test;
 	private Rigidbody2D rb2d;

@@ -1,13 +1,13 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class GroundCheck : MonoBehaviour {
+public class FishGroundCheck : MonoBehaviour {
 
-	private FoxController player;
+	private FishController player;
 
 	// Use this for initialization
 	void Start () {
-		player = gameObject.GetComponentInParent<FoxController> ();
+		player = gameObject.GetComponentInParent<FishController> ();
 	}
 
 	void OnTriggerEnter2D(Collider2D col)

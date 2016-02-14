@@ -17,7 +17,7 @@ public class SmoothCamera2D : MonoBehaviour {
 	// Initialize the variable to point to the player
 	void Start() {
 
-		player = GameObject.FindGameObjectWithTag ("Player");
+
 
 	}
 
@@ -25,6 +25,7 @@ public class SmoothCamera2D : MonoBehaviour {
 	// Set the x and y coords for the player and then set camera to follow. 
 	void Update () 
 	{
+		player = GameObject.FindGameObjectWithTag ("Player");
 		float posX = Mathf.SmoothDamp(transform.position.x, player.transform.position.x, ref velocity.x, smoothTimeX);
 		float posY = Mathf.SmoothDamp(transform.position.y, player.transform.position.y, ref velocity.y, smoothTimeY);
 

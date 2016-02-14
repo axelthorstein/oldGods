@@ -45,27 +45,16 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\RagePixel\Code\IRagePixel.cs" />
-     <Compile Include="Assets\RagePixel\Code\RagePixelAnimation.cs" />
-     <Compile Include="Assets\RagePixel\Code\RagePixelBitmap.cs" />
-     <Compile Include="Assets\RagePixel\Code\RagePixelCamera.cs" />
-     <Compile Include="Assets\RagePixel\Code\RagePixelCell.cs" />
-     <Compile Include="Assets\RagePixel\Code\RagePixelRow.cs" />
-     <Compile Include="Assets\RagePixel\Code\RagePixelSettings.cs" />
-     <Compile Include="Assets\RagePixel\Code\RagePixelSprite.cs" />
-     <Compile Include="Assets\RagePixel\Code\RagePixelSpriteSheet.cs" />
-     <Compile Include="Assets\RagePixel\Demo\Walker.cs" />
+     <Compile Include="Assets\Scripts\CharacterChanger.cs" />
+     <Compile Include="Assets\Scripts\FishController.cs" />
+     <Compile Include="Assets\Scripts\FoxController.cs" />
      <Compile Include="Assets\Scripts\GroundCheck.cs" />
-     <Compile Include="Assets\Scripts\PlayerController.cs" />
      <Compile Include="Assets\Scripts\SmoothCamera2D.cs" />
-     <None Include="Assets\RagePixel\readme.txt" />
-     <None Include="Assets\RagePixel\Code\RagePixelBasicFlash.shader" />
-     <None Include="Assets\RagePixel\Code\RagePixelBasic.shader" />
- <Reference Include="UnityEngine.UI">
- <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
- </Reference>
  <Reference Include="UnityEngine.Networking">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UI">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

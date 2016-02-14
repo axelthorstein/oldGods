@@ -9,17 +9,21 @@ public class FoxController : MonoBehaviour {
 	public int maxSpeed = 5;
 	public float jumpPower = 850f;
 	public bool grounded = true; 
-	int test;
+
 	private Rigidbody2D rb2d;
 	private Animator anime;
 
-	void Start() {
 
+	void Start() {
+		
 		rb2d = gameObject.GetComponent<Rigidbody2D> ();
 		anime = gameObject.GetComponent<Animator> ();
+
 	}
 
 	void Update() {
+		
+
 
 		anime.SetBool ("Grounded", grounded);
 		anime.SetFloat ("Speed", Mathf.Abs(rb2d.velocity.x));

@@ -16,13 +16,10 @@ public class FishController : MonoBehaviour {
 	void Start() {
 
 		rb2d = gameObject.GetComponent<Rigidbody2D> ();
-		anime = gameObject.GetComponent<Animator> ();
 	}
 
 	void Update() {
 
-		anime.SetBool ("Grounded", grounded);
-		anime.SetFloat ("Speed", Mathf.Abs(rb2d.velocity.x));
 
 		if (Input.GetAxis("Horizontal") < -0.1f) 
 		{

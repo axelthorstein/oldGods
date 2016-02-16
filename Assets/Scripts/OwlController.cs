@@ -1,45 +1,63 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class FoxController : MonoBehaviour {
+public class OwlController : MonoBehaviour {
+	// Movement
 
 	public float speed = 100f;
 	public int maxSpeed = 5;
-	public float jumpPower = 850f;
-	public bool grounded = true; 
+	public float jumpPower = 1000f;
+	public bool grounded = true;
+	private bool falling;
+	private float currentHeight;
+	private float previousHeight;
 
 	private Rigidbody2D rb2d;
 	private Animator anime;
 
+
 	void Start() {
-		
+
 		rb2d = gameObject.GetComponent<Rigidbody2D> ();
 		anime = gameObject.GetComponent<Animator> ();
+		previousHeight = 0;
+		falling = false;
 	}
 
 	void Update() {
 
-		// Connect the script to the animator parameters.
-		anime.SetBool ("Grounded", grounded);
-		anime.SetFloat ("Speed", Mathf.Abs(rb2d.velocity.x));
+		anime.SetBool ("falling", falling);
 
+		// This set the glid animation if owl is falling.
+		currentHeight = transform.position.y;
+		float travel = currentHeight - previousHeight;
+		previousHeight = currentHeight;
+
+		if (travel < 0) {
+			falling = true;
+		} else {
+			falling = false;
+		}
+			
 		// Flip sprite in direction you are moving. 
 		if (Input.GetAxis("Horizontal") < -0.1f) 
 		{
-			transform.localScale = new Vector3 (-1, 1, 1);
+			transform.localScale = new Vector3 (-5, 5, 1);
 		}
 
 		if (Input.GetAxis("Horizontal") > 0.1f) 
 		{
-			transform.localScale = new Vector3 (1, 1, 1);
+			transform.localScale = new Vector3 (5, 5, 1);
 		}
 
-		if (Input.GetButtonDown("Jump") && grounded) 
+		if (Input.GetButtonDown("Jump")) 
 		{
 			rb2d.AddForce (Vector2.up * jumpPower);
 		}
 	}
-		
+
+
+	// Update is called once per frame
 	void FixedUpdate () {
 
 		// Set our velocity to 75% to make up for no friction.

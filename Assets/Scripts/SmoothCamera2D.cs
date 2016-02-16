@@ -13,15 +13,6 @@ public class SmoothCamera2D : MonoBehaviour {
 	public Vector3 minCameraPos;
 	public Vector3 maxCameraPos;
 
-
-	// Initialize the variable to point to the player
-	void Start() {
-
-
-
-	}
-
-	// Update is called once per frame
 	// Set the x and y coords for the player and then set camera to follow. 
 	void Update () 
 	{
@@ -32,14 +23,10 @@ public class SmoothCamera2D : MonoBehaviour {
 		transform.position = new Vector3 (posX, posY, transform.position.z);
 
 		if (bounds) {
-
 			transform.position = new Vector3 (Mathf.Clamp (transform.position.x, minCameraPos.x, maxCameraPos.x), 
 				Mathf.Clamp(transform.position.y, minCameraPos.y, maxCameraPos.y), 
 				Mathf.Clamp(transform.position.z, minCameraPos.z, maxCameraPos.z));
-		
 		}
-	
-		
 	}
 }
 

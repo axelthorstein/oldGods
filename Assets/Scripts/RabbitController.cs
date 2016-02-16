@@ -3,8 +3,6 @@ using System.Collections;
 
 public class RabbitController : MonoBehaviour {
 
-	// Movement
-
 	public float speed = 100f;
 	public int maxSpeed = 5;
 	public float jumpPower = 850f;
@@ -18,16 +16,14 @@ public class RabbitController : MonoBehaviour {
 
 		rb2d = gameObject.GetComponent<Rigidbody2D> ();
 		anime = gameObject.GetComponent<Animator> ();
-
 	}
 
 	void Update() {
-
-
-
+		
 		anime.SetBool ("Grounded", grounded);
 		anime.SetFloat ("Speed", Mathf.Abs(rb2d.velocity.x));
 
+		// Flip sprite in direction you are moving. 
 		if (Input.GetAxis("Horizontal") < -0.1f) 
 		{
 			transform.localScale = new Vector3 (-1, 1, 1);
@@ -43,9 +39,7 @@ public class RabbitController : MonoBehaviour {
 			rb2d.AddForce (Vector2.up * jumpPower);
 		}
 	}
-
-
-	// Update is called once per frame
+		
 	void FixedUpdate () {
 
 		// Set our velocity to 75% to make up for no friction.

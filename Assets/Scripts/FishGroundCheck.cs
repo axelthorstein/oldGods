@@ -5,7 +5,6 @@ public class FishGroundCheck : MonoBehaviour {
 
 	private FishController player;
 
-	// Use this for initialization
 	void Start () {
 		player = gameObject.GetComponentInParent<FishController> ();
 	}

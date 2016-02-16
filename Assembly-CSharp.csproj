@@ -50,6 +50,7 @@
      <Compile Include="Assets\Scripts\FishGroundCheck.cs" />
      <Compile Include="Assets\Scripts\FoxController.cs" />
      <Compile Include="Assets\Scripts\GroundCheck.cs" />
+     <Compile Include="Assets\Scripts\OwlController.cs" />
      <Compile Include="Assets\Scripts\RabbitController.cs" />
      <Compile Include="Assets\Scripts\RabbitGroundcheck.cs" />
      <Compile Include="Assets\Scripts\SmoothCamera2D.cs" />

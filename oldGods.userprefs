@@ -1,11 +1,9 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/CharacterChanger.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/OwlController.cs">
     <Files>
-      <File FileName="Assets/Scripts/CharacterChanger.cs" Line="36" Column="10" />
-      <File FileName="Assets/Scripts/FoxController.cs" Line="50" Column="3" />
-      <File FileName="Assets/Scripts/RabbitController.cs" Line="32" Column="4" />
-      <File FileName="Assets/Scripts/OwlController.cs" Line="34" Column="21" />
+      <File FileName="Assets/Scripts/SmoothCamera2D.cs" Line="27" Column="13" />
+      <File FileName="Assets/Scripts/OwlController.cs" Line="37" Column="19" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

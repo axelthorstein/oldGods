@@ -1,0 +1,154 @@
+fileFormatVersion: 2
+guid: 8a4d137746afd49408a89b38284cedd2
+timeCreated: 1455894751
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Rainbow Wolf_0
+    21300002: Rainbow Wolf_1
+    21300004: Rainbow Wolf_2
+    21300006: Rainbow Wolf_3
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Rainbow Wolf_0
+      rect:
+        serializedVersion: 2
+        x: 504
+        y: 361
+        width: 725
+        height: 320
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 18.636002, y: -27.475998}
+        - {x: 30.636002, y: -34.475998}
+        - {x: 29.636002, y: -39.475998}
+        - {x: 29.636002, y: -45.475998}
+        - {x: 102.636, y: -45.475998}
+        - {x: 103.636, y: -34.475998}
+        - {x: 103.636, y: 26.524002}
+        - {x: 90.636, y: 46.524002}
+        - {x: 19.636002, y: 46.524002}
+        - {x: -1.3639984, y: 43.524002}
+        - {x: -103.364, y: 25.524002}
+        - {x: -103.364, y: 11.524002}
+        - {x: -89.364, y: -1.4759979}
+        - {x: -79.364, y: -9.475998}
+        - {x: -50.364, y: -9.475998}
+        - {x: -38.364, y: -2.475998}
+        - {x: -43.364, y: -20.475998}
+        - {x: -39.364, y: -45.475998}
+        - {x: 15.636002, y: -45.475998}
+        - {x: 28.636002, y: -40.475998}
+        - {x: 29.636002, y: -36.475998}
+    - name: Rainbow Wolf_1
+      rect:
+        serializedVersion: 2
+        x: 2304
+        y: 354
+        width: 725
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -103.164, y: 9.536003}
+        - {x: -77.164, y: -46.463997}
+        - {x: 103.836, y: -46.463997}
+        - {x: 103.836, y: 47.536003}
+        - {x: 34.836, y: 47.536003}
+        - {x: -102.164, y: 23.536003}
+        - {x: -103.164, y: 20.536003}
+    - name: Rainbow Wolf_2
+      rect:
+        serializedVersion: 2
+        x: 4104
+        y: 350
+        width: 721
+        height: 331
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -101.46399, y: -8.099998}
+        - {x: -51.46399, y: -47.1}
+        - {x: 79.53601, y: -47.1}
+        - {x: 103.53601, y: -30.099998}
+        - {x: 103.53601, y: 47.9}
+        - {x: 26.53601, y: 47.9}
+        - {x: -38.46399, y: 38.9}
+        - {x: -101.46399, y: 24.900002}
+    - name: Rainbow Wolf_3
+      rect:
+        serializedVersion: 2
+        x: 5904
+        y: 347
+        width: 725
+        height: 334
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 74.236084, y: -47.451996}
+        - {x: 76.236084, y: -41.451996}
+        - {x: 104.236084, y: 1.5480042}
+        - {x: 104.236084, y: 33.548004}
+        - {x: 100.236084, y: 48.548004}
+        - {x: 58.236084, y: 48.548004}
+        - {x: -100.763916, y: 24.548004}
+        - {x: -100.763916, y: 8.548004}
+        - {x: -70.763916, y: -47.451996}
+        - {x: 53.236084, y: -47.451996}
+        - {x: 50.236084, y: -41.451996}
+        - {x: 48.236084, y: -39.451996}
+        - {x: 58.236084, y: -47.451996}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
